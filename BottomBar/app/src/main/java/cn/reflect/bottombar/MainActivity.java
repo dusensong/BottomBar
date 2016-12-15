@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "selectBottomItem");
         Log.e(TAG, "currentPosition=" + currentPosition);
         selectBottomItem(currentPosition);
-
     }
 
     void selectBottomItem(int position) {
