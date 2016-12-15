@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_bar_height"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/stores"
+        style="@style/BottomBar.ItemContainer">
+
+        <TextView
+            style="@style/BottomBar.ItemTextView"
+            android:text="@string/store_list"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/BottomBar.ItemImageView"
+            android:src="@drawable/bottom_bar_ic_stores"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sign_in_mgr"
+        style="@style/BottomBar.ItemContainer">
+
+        <ImageView
+            style="@style/BottomBar.ItemImageView"
+            android:src="@drawable/bottom_bar_ic_sign_in_mgr"/>
+
+        <TextView
+            style="@style/BottomBar.ItemTextView"
+            android:text="@string/sign_in_mgr"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar_bottom_area_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom_bar_bottom_background">
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="@dimen/bottom_bar_middle_icon_width"
+            android:layout_height="@dimen/bottom_bar_middle_icon_width"
+            android:layout_gravity="top|center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bottom_bar_middle_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/bottom_bar_bottom_margin"
+            android:text="@string/add_store"
+            android:textColor="@color/primary"
+            android:textSize="10sp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sale_brief"
+        style="@style/BottomBar.ItemContainer">
+
+        <ImageView
+            style="@style/BottomBar.ItemImageView"
+            android:src="@drawable/bottom_bar_ic_sale_brief"/>
+
+        <TextView
+            style="@style/BottomBar.ItemTextView"
+            android:text="@string/sale_brief"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/value_added_services"
+        style="@style/BottomBar.ItemContainer">
+
+        <ImageView
+            style="@style/BottomBar.ItemImageView"
+            android:src="@drawable/bottom_bar_ic_services"/>
+
+        <TextView
+            style="@style/BottomBar.ItemTextView"
+            android:text="@string/value_added_services"/>
+    </FrameLayout>
+</LinearLayout>

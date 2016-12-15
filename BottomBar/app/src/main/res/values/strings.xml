@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BottomBar</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="store_list">商户列表</string>
+    <string name="sign_in_mgr">签到管理</string>
+    <string name="sale_brief">销售简报</string>
+    <string name="value_added_services">增值服务</string>
+    <string name="add_store">新增商户</string>
+</resources>
